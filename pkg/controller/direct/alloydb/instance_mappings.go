@@ -169,7 +169,7 @@ func Instance_ObservabilityInstanceInfoObservedState_FromProto(mapCtx *direct.Ma
 		return nil
 	}
 	out := &krm.Instance_ObservabilityInstanceInfoObservedState{}
-	out.Enabled = direct.LazyPtr(in.GetEnabled())
+	out.Enabled = direct.PtrTo(in.GetEnabled())
 	out.PreserveComments = direct.LazyPtr(in.GetPreserveComments())
 	out.TrackWaitEvents = direct.LazyPtr(in.GetTrackWaitEvents())
 	out.TrackWaitEventTypes = direct.LazyPtr(in.GetTrackWaitEventTypes())
@@ -207,7 +207,7 @@ func Instance_QueryInsightsInstanceInfoObservedState_FromProto(mapCtx *direct.Ma
 		return nil
 	}
 	out := &krm.Instance_QueryInsightsInstanceInfoObservedState{}
-	out.Enabled = direct.LazyPtr(in.GetEnabled())
+	out.Enabled = direct.PtrTo(in.GetEnabled())
 	out.RecordApplicationTags = direct.LazyPtr(in.GetRecordApplicationTags())
 	out.RecordClientAddress = direct.LazyPtr(in.GetRecordClientAddress())
 	out.QueryStringLength = direct.LazyPtr(in.GetQueryStringLength())

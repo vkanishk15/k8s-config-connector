@@ -33,6 +33,7 @@ status:
   observedGeneration: 2
   observedState:
     observabilityInstanceInfo:
+      enabled: false
       maxQueryStringLength: 10240
       queryPlansPerMinute: 20
       trackWaitEventTypes: true

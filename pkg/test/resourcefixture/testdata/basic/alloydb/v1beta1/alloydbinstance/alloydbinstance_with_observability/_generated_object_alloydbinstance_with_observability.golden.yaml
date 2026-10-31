@@ -54,6 +54,7 @@ status:
       trackWaitEventTypes: true
       trackWaitEvents: true
     queryInsightsInfo:
+      enabled: false
       queryPlansPerMinute: 5
       queryStringLength: 1024
   state: READY
